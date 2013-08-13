@@ -12,9 +12,6 @@ address.
 It includes both a simple version and an advanced (pretty) version, you should only need 
 to put one or the other on your website.
 
-*For the advanced version, if you add any form fields to the HTML, you will also need to 
-add them to the php script.*
-
 For a detailed explanation of the methods used, see 
 http://nfriedly.com/techblog/2009/11/how-to-build-a-spam-free-contact-forms-without-captchas/
 

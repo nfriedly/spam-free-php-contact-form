@@ -7,6 +7,7 @@ if(isset($_POST['url']) && $_POST['url'] == ''){
 	$youremail = 'you@yoursite.com';
 
 	// prepare a "pretty" version of the message
+	// Important: if you added any form fields to the HTML, you will need to add them here also
 	$body = "This is the form that was just submitted:
 	Name:  $_POST[name]
 	E-Mail: $_POST[email]
