@@ -1,6 +1,30 @@
+Spam-free contact form
+=======================
+
+This form will prevent the most common forms of automated "contact form spam" by adding a 
+hidden field to the form. If any text is entered into the hidden field, the message is 
+assumed to be spam and thrown out.
+
+It also uses JavaScript to generate your email address as a clickable link after the page 
+has loaded. This prevents scrapers that do not execute javascript from reading your email 
+address.
+
+It includes both a simple version and an advanced (pretty) version, you should only need 
+to put one or the other on your website.
+
+*For the advanced version, if you add any form fields to the HTML, you will also need to 
+add them to the php script.*
+
+For a detailed explanation of the methods used, see 
+http://nfriedly.com/techblog/2009/11/how-to-build-a-spam-free-contact-forms-without-captchas/
+
+
+MIT License
+------------
+
 The MIT License (MIT)
 
-Copyright (c) 2013 Nathan Friedly
+Copyright (c) 2013 Nathan Friedly - http://nfriedly.com/
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of
 this software and associated documentation files (the "Software"), to deal in

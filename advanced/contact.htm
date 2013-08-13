@@ -1,0 +1,68 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+
+<!-- 
+
+	To use this code, you'll need to update your email address in the javascript 
+	on this page, and in the php code in submit.php
+	
+	You are 100% allowed to remove the credit link at the bottom and do whatever 
+	you like with the form.  However, I would greatly appreciate it if you left 
+	the link intact :)
+		
+	Thanks,
+	-Nathan
+	
+-->
+
+	<title>Contact Form</title>
+	
+	<style type="text/css">
+		.antispam { display:none;}
+	</style>
+	
+	<script type="text/javascript">
+		// split your email into two parts and remove the @ symbol
+		var first = "yourname";
+		var last = "yoursite.com";
+	</script>
+
+</head>
+<body>
+
+
+	<form method="post" action="submit.php">
+	
+		<p>Your name:
+		<br /><input name="name" /></p>
+		
+		<p>Your email:
+		<br /><input name="email" /></p>
+		
+		<p class="antispam">Leave this empty:
+		<br /><input name="url" /></p>
+		
+		<p>Your message:
+		<br /><textarea name="message" rows="10" cols="50"></textarea></p>
+		
+		<p><input type="submit" value="Send" /></p>
+		
+	</form>
+	
+	
+	<p>My e-mail address:
+	<script type="text/javascript">
+		document.write('<a href="mailto:'+first + '@' + last+'">'+first + '@' + last+'<\/a>');
+	</script>
+	<noscript>
+	Please enable javascript or use the contact form.
+	</noscript>
+	</p>
+	
+	<p><small><a href="http://nfriedly.com/techblog/2009/11/how-to-build-a-spam-free-contact-forms-without-captchas/">Spam-free contact form by <a href="http://nfriedly.com/" title="Nathan Friedly - JavaScript / node.js developer">Nathan Friedly</a></small></p>
+
+
+
+</body>
+</html>
