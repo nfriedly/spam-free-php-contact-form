@@ -1,7 +1,7 @@
 <?php
 
-// if the url field is empty
-if(isset($_POST['url']) && $_POST['url'] == ''){
+// if the url field is empty, but the message field isn't
+if(isset($_POST['url']) && $_POST['url'] == '' && $_POST['message'] != ''){
 
 	// put your email address here
 	$youremail = 'you@yoursite.com';
