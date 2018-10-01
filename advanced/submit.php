@@ -29,6 +29,10 @@ if(isset($_POST['url']) && $_POST['url'] == '' && $_POST['message'] != ''){
 
 // otherwise, let the spammer think that they got their message through
 
+// uncomment these lines to redirect instead of displaying HTML
+//header('Location: http://www.mysite.com/thankyou.html');
+//exit('Redirecting you to http://www.mysite.com/thankyou.html');
+
 ?>
 <!DOCTYPE HTML>
 <html>
